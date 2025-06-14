@@ -4391,7 +4391,7 @@ async function requestNotificationPermission() {
 
 function showBrowserNotification(title, body) {
     if (userData.notifications?.enabled && Notification.permission === 'granted') {
-        const notification = new Notification(title, { body });
+        new Notification(title, { body });
         if (userData.notifications.sound) {
             const sound = new Audio('/assets/notification.mp3');
             sound.play().catch(() => console.warn('Failed to play notification sound.'));
