@@ -1059,7 +1059,7 @@ function navigateTo(url) {
 
 // Mock user ID and username
 const currentUserId = localStorage.getItem('currentUserId') || 'user123';
-const currentUsername = currentUserId ? (currentUserId.charAt(0).toUpperCase() + currentUserId.slice(1)) : 'User';
+let currentUsername = currentUserId ? (currentUserId.charAt(0).toUpperCase() + currentUserId.slice(1)) : 'User';
 
 // Global state
 let socketIO;
