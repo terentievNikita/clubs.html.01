@@ -4794,7 +4794,7 @@ function searchMessagesByCategory(category) {
     renderChatMessages(currentClubId, filteredMessages);
 }
 
-const chatSection = document.querySelector('.chat-section');
+let chatSection = document.querySelector('.chat-section');
 if (chatSection) {
     const existingFilter = chatSection.querySelector('.category-filter');
     if (existingFilter) existingFilter.remove();
