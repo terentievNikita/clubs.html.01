@@ -2316,7 +2316,7 @@ function searchClubs(query) {
         club.name.toLowerCase().includes(query.toLowerCase()) ||
         club.description?.toLowerCase().includes(query.toLowerCase())
     );
-    renderClub(filteredClubs);
+    renderClub();
 }
 
 // Add search functionality
